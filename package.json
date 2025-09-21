@@ -1,0 +1,20 @@
+{
+  "name": "wordexcelmerge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dayjs": "^1.11.18",
+    "docx-templates": "^4.14.1",
+    "docxtemplater": "^3.66.3",
+    "pizzip": "^3.2.0",
+    "xlsx": "^0.18.5"
+  }
+}

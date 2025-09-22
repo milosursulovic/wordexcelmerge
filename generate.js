@@ -194,10 +194,13 @@ async function renderOne(templateBuffer, data, outPath) {
     };
 
     const fname =
-      sanitizeFilename(`${Ime || "BezImena"} ${Prezime || ""}`) || "Zaposleni";
-    const outPath = path.join(OUTPUT_DIR, `${fname} - generisano.docx`);
+      sanitizeFilename(
+        `${JMBG || "BezJMBG"}_${Ime || "BezImena"}_${Prezime || ""}`
+      ) || "Zaposleni";
+
+    const outPath = path.join(OUTPUT_DIR, `${fname}.docx`);
     await renderOne(templateBuf, data, outPath);
-    console.log("✔", outPath, "| OpisRM:", OpisRadnogMesta || "(prazno)");
+    console.log("✔", outPath);
   }
 
   console.log(
